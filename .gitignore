@@ -8,10 +8,10 @@
 
 # Node
 /node_modules
-./Server/node_modules
-./GitHubPush.bat
+/Server/node_modules
 npm-debug.log
 yarn-error.log
+/GitHubPush.bat
 
 # IDEs and editors
 .idea/
