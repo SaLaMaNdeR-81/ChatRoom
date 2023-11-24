@@ -8,6 +8,8 @@
 
 # Node
 /node_modules
+./Server/node_modules
+./GitHubPush.bat
 npm-debug.log
 yarn-error.log
 

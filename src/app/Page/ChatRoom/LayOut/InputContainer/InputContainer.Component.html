@@ -1,0 +1,6 @@
+<div class="InputContainer-Box">
+
+    <textarea (keydown)="onEnterKeyPress($event)" class="InputContainer-TextArea" [(ngModel)]="TextArea" (paste)="handlePaste($event)" ></textarea>
+    <div class="InputContainer-Send" (click)="onSendMessage()" > <ion-icon name="send-outline"></ion-icon> </div>
+
+</div>

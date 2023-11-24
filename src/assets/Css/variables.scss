@@ -1,0 +1,67 @@
+// ==========================
+
+$Color-Type1-1: #0b2447;
+$Color-Type1-2: #19376d;
+$Color-Type1-3: #576cbc;
+$Color-Type1-4: #a5d7e8;
+
+// ======
+
+$Color-Background: #1e1e1e;
+$Color-Background2: #333333;
+$Color-Background-Message: #35424a;
+$Color-Background-Message2: #2e2e2e;
+$Color-Text: #ffffff;
+$Color-PrimeryNeon: #00ffcc;
+$Color-SecondaryNeon: #ffcc00;
+$Color-Accent: #4caf50;
+$Color-Accent2: #9900ff;
+$Color-Link: #3498db;
+$Color-ChatInput: #262626;
+$Color-Btn: #4caf50;
+
+// ======
+
+$Color-Type3-1: #ffc5c5;
+$Color-Type3-2: #ffebd8;
+$Color-Type3-3: #c7dca7;
+$Color-Type3-4: #89b9ad;
+// ==========================
+// InputContainer
+// ==========================
+
+$InputContainer: #242424;
+
+// ==========================
+// Dfault Theme
+// ==========================
+
+$ChatRoom-ScrollBack: #c7dca7;
+$ChatRoom-TitleColor: #fff;
+$ChatRoom-TextColot: #242424;
+
+$ChatRoom-MainBack: #242424;
+
+$ChatRoom-BoxBack: #4c4474;
+$ChatRoom-BoxShadow: #6d6ebb;
+
+$ChatRoom-MessBack-Own: #6d95bb;
+$ChatRoom-MessBack-Outher: #45719b;
+$ChatRoom-MessAge-Shadow: #c7dca7;
+$ChatRoom-MessAge-Border: 1px solid #6d6ebb;
+
+$ChatRoom-ChatBack: #89b9ad;
+$ChatRoom-ChatInputColor: #fff;
+$ChatRoom-ChatInputBtn: #fff;
+$ChatRoom-ChatShadow: #6d6ebb;
+$ChatRoom-ChatBorder: 1px solid #6d6ebb;
+
+// ==========================
+// Dfault Theme
+// ==========================
+
+body [theme="Default"] {
+  $ChatRoom-MainBack: #fff;
+}
+
+// ==========================

@@ -1,0 +1,148 @@
+@import "../../../assets/Css/variables.scss";
+
+// ==============================
+
+.Messages-Box::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+
+.Messages-Box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Messages-Box::-webkit-scrollbar-thumb {
+  background-color: $ChatRoom-ScrollBack;
+  border-radius: 5px;
+}
+
+.Messages-Box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// ==============================
+.Messages-Box {
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  padding: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0%;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+
+  display: flex;
+  flex-flow: column;
+  // justify-content: flex-end;
+  align-items: flex-end;
+
+  // border: 1px solid red;
+}
+
+.Message-Item-Box {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+
+  &.OtherMessage {
+    justify-content: start;
+  }
+
+  // border: 1px solid red;
+}
+
+.Message-Item {
+  position: relative;
+
+  min-width: 300px;
+  max-width: 90%;
+  height: auto;
+
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+
+  filter: drop-shadow(0px 1px 2px $ChatRoom-MessAge-Shadow);
+  border-radius: 5px;
+  &.OwnMessage {
+    background: $ChatRoom-MessBack-Own;
+  }
+
+  &.OtherMessage {
+    background: $ChatRoom-MessBack-Outher;
+  }
+
+  border: $ChatRoom-MessAge-Border;
+}
+
+// ===================================
+
+.Message-Username {
+  position: absolute;
+
+  color: $ChatRoom-TitleColor;
+
+  top: -20px;
+  right: 10px;
+
+  // ===
+}
+
+.Message-Date {
+  position: absolute;
+
+  color: $ChatRoom-TitleColor;
+
+  top: -20px;
+  left: 10px;
+
+  // ===
+}
+
+.Message-Text {
+  position: relative;
+  overflow: visible;
+
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+
+  word-break: break-all;
+
+  line-height: 30px;
+
+  text-align: end;
+
+  // border: 1px solid red;
+}
+
+// ===================================
+
+.OtherMessage .Message-Username {
+  right: unset;
+  left: 10px;
+}
+
+.OtherMessage .Message-Date {
+  left: unset;
+  right: 10px;
+}
+
+// .OtherMessage .Message-Text {
+//   left: unset;
+//   right: 10px;
+// }
+
+// ===================================

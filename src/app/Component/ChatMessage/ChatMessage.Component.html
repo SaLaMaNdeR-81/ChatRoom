@@ -1,0 +1,14 @@
+<div class="Messages-Box" #MessagesBox >
+    
+    <!-- <div *ngFor="let Message of ChatMessageService.ChatMessages | async" class="Alert-Item" [ngClass]="{'OwnMessage': Message.sender === 'OwnMessage', 'OtherMessage': Message.sender === 'OtherMessage'}" > -->
+    <div class="Message-Item-Box " *ngFor="let Message of ChatMessageService.ChatMessages | async" [ngClass]="{'OwnMessage': Message.username === Username, 'OtherMessage': Message.username !== Username}" >
+
+        <div class="Message-Item" [ngClass]="{'OwnMessage': Message.username === Username, 'OtherMessage': Message.username !== Username}" >
+            <div class="Message-Username">{{Message.username}}</div>
+            <div class="Message-Date" [innerHTML]="TimeService.GenTimeAge(Message.date)"></div>
+            <p class="Message-Text" [innerHTML]="Message.message"  ></p>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="Auth-Box">
+
+    <from class="Auth-Fom" (ngSubmit)="onSubmit()" >
+
+        <div class="Auth-Title"> Login </div>
+        <input class="Auth-Input" type="text"   [(ngModel)]="Username" name="username" placeholder="Username" minlength="3" maxlength="16">
+        <button class="Auth-Submit-btn" type="submit" (click)="onSubmit()" > Submit </button>
+
+    </from>
+
+</div>

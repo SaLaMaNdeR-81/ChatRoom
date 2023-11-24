@@ -1,0 +1,103 @@
+.Auth-Box {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //   border: 1px solid red;
+}
+
+.Auth-Fom {
+  position: absolute;
+
+  width: 400px;
+  height: 600px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  //   border: 1px solid red;
+}
+
+// ====================================
+
+.Auth-Title {
+  position: relative;
+  user-select: none;
+
+  // top: 150px;
+  left: -60px;
+
+  font-family: MedievalSharp Regular;
+  font-size: 30px;
+
+  &:hover {
+    animation: Neon-Shadow 1s infinite alternate;
+  }
+
+  // ===
+}
+
+.Auth-Input {
+  padding: 10px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+
+  background: #0000004d;
+  color: #fff;
+  font-size: 13px;
+  font-family: monospace;
+
+  box-shadow: inset 0 -5px 45px #64646433, 0 1px 1px #ffffff33;
+  text-shadow: 1px 1px 1px #0000004d;
+  border: 1px solid #0000004d;
+  border-radius: 4px;
+  transition: box-shadow 0.5s ease;
+
+  &:focus {
+    box-shadow: inset 0 -5px 45px #64646466, 0 1px 1px #ffffff33;
+  }
+
+  // ===
+}
+
+.Auth-Submit-btn {
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+
+  padding: 5px;
+  margin: 20px;
+
+  width: 150px;
+  left: -10px;
+
+  font-size: 15px;
+  font-family: MedievalSharp Regular;
+
+  background: #4a77d4;
+
+  box-shadow: inset 0 -5px 45px #64646433, 0 1px 1px #ffffff33;
+  border-radius: 6px;
+  border: 1px solid #0000004d;
+
+  &:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    top: 5px;
+    // left: -15px;
+  }
+
+  // ===
+}

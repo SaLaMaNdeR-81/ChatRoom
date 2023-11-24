@@ -1,0 +1,10 @@
+<div class="Box-Alert">
+    
+    <div *ngFor="let Alert of MessageService.AlertMessages | async" class="Alert-Item" [ngClass]="{'Success': Alert.type === 'Success', 'Warning': Alert.type === 'Warning', 'Error': Alert.type === 'Error'}" >
+
+        <div class="Alert-Type">{{Alert.type}}</div>
+        <div class="Alert-Message">{{Alert.message}}</div>
+
+    </div>
+
+</div>
